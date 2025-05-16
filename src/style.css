@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Kablammo";
+  src: url("./assets/fonts/Kablammo-Regular-VariableFont_MORF.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #328e6e;
+  color: white;
+  text-align: center;
+}
+
+button {
+  font-family: "Kablammo", Arial, sans-serif;
+
+  width: 150px;
+  padding: 30px 50px;
+  background-color: #328e6e;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+  margin-right: 10px; /* to see the space between buttons, this val used for pushing */
+
+  opacity: 0;
+  transform: translateX(30px); /* start 30px below */
+  animation: slideFade 1s ease-out forwards;
+}
+
+@keyframes slideFade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+button:hover {
+  width: 200px; /* expands on hover */
+  background-color: rgb(56, 161, 125);
+}
+
+button:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.imageHolder {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  background-image: url("./assets/images/leafLegends.png");
+  background-size: cover; /* To make the image cover the whole box */
+
+  background-color: #328e6e;
+
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+
+  transition: transform 0.6s ease-in-out;
+}
+
+.imageHolder:hover {
+  transform: rotate(360deg);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#content {
+  background-color: #67ae6e;
+  flex-grow: 1; /* Fill all space using flex */
+  overflow: auto;
+}
+
+.homeFeed {
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 600px;
+  width: 600px;
+
+  background-color: #e1eebc;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.05);
+
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+
+  max-width: 600px;         
+  font-family: 'Georgia', serif; /* classy and readable font */
+  font-size: 1.1rem;        
+  line-height: 1.6;        
+  color: #2d4a27;           
+  text-align: justify;
+}
