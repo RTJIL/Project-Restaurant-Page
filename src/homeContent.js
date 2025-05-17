@@ -15,8 +15,8 @@ Before she can sneer, a bowl arrives: emerald leaves shimmering like forgotten m
   contentDiv.appendChild(addHomeFeed)
 }
 
-function clearHomeContent() {
+function clearContent() {
         contentDiv.innerHTML = ''; 
 }
 
-export { addHomeContent, clearHomeContent }
+export { addHomeContent, clearContent }
