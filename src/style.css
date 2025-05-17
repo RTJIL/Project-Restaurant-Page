@@ -157,6 +157,9 @@ button:active {
   font-family: "Georgia", serif;
   background-color: #f0fff0;
   color: #333;
+
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 .contactTab h1 {
