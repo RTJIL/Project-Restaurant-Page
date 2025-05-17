@@ -149,3 +149,55 @@ button:active {
 
   list-style: none;
 }
+
+/* */
+
+.contactTab {
+  padding: 40px;
+  font-family: "Georgia", serif;
+  background-color: #f0fff0;
+  color: #333;
+}
+
+.contactTab h1 {
+  font-size: 2.5rem;
+  color: #328e6e;
+}
+
+.contactTab p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.contactTab a {
+  color: #328e6e;
+  text-decoration: none;
+}
+.contactTab a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.contactTab form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactTab input,
+.contactTab textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.contactTab button {
+  padding: 10px;
+  background-color: #328e6e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contactTab button:hover {
+  background-color: #2b7f61;
+}

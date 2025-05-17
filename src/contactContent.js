@@ -32,7 +32,7 @@ function addContactContent() {
   contactTab.appendChild(email);
 
   // Optional: Contact form (comment out if not needed)
-  /*
+  
   const form = document.createElement("form");
 
   const nameInput = document.createElement("input");
@@ -50,7 +50,7 @@ function addContactContent() {
   form.appendChild(submitBtn);
 
   contactTab.appendChild(form);
-  */
+ 
   contentDiv.appendChild(contactTab);
 }
 
