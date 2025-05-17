@@ -51,8 +51,6 @@ function addContactContent() {
 
   contactTab.appendChild(form);
   */
-
-  // Add it all to content
   contentDiv.appendChild(contactTab);
 }
 

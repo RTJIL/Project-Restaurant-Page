@@ -1,7 +1,7 @@
 import "./style.css"
 import { addHomeContent, clearContent } from "./homeContent";
 import { addMenuContent } from "./menuContent";
-import {}
+import { addContactContent } from "./contactContent";
 
 console.log("Hello There")
 addHomeContent();
@@ -17,7 +17,7 @@ buttons.forEach(function(btn) {
             addMenuContent();
         } else if (btn.textContent.toUpperCase() === "CONTACT") {
             clearContent();
-
+            addContactContent();
         } 
     } )
 })
