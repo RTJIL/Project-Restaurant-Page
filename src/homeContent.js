@@ -16,7 +16,7 @@ Before she can sneer, a bowl arrives: emerald leaves shimmering like forgotten m
 }
 
 function clearContent() {
-        contentDiv.innerHTML = ''; 
+  contentDiv.innerHTML = ""
 }
 
 export { addHomeContent, clearContent }
